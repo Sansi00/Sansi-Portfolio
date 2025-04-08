@@ -2,37 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sansi Pokharel – Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
       color: #333;
     }
-    h1, h2 {
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
       color: #1a73e8;
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 0.25rem;
     }
+
     .project {
-      margin-bottom: 2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 1rem;
+      background: white;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease-in-out;
     }
-    img {
-      max-width: 100%;
-      border-radius: 6px;
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .contact a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Sansi Pokharel</h1>
-  <p>Web Developer • Cybersecurity Student • Digital Creator</p>
 
-  <h2>Projects</h2>
+<header>
+    <h1>Sansi Pokharel</h1>
+    <p>Web Developer • Cybersecurity Student • Creative Technologist</p>
+  </header>
 
+  <main>
+    <section>
+      <h2>Projects</h2>
+      
   <div class="project">
     <h3>RE:EAT by Ari</h3>
     <p>Developed a WordPress site for a Kathmandu-based food brand. Built custom layout, integrated online ordering, subscription plans, and contact forms using HTML, CSS, and JavaScript.
@@ -48,9 +97,17 @@
        Note: Website is currently offline; visual archive available below.</p>
     <img src="Pashma_by_Naaz_Screenshot_Refined.png" alt="Pashma by Naaz screenshot"/>
   </div>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:sansi@usf.edu">sansi@usf.edu</a></p>
-  <p><a href="https://github.com/Sansi00">GitHub</a> | <a href="https://www.linkedin.com/in/sansi-pokharel/">LinkedIn</a></p>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sansi@usf.edu">sansi@usf.edu</a></p>
+      <p>
+        <a href="https://github.com/Sansi00" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/sansi-pokharel/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
 </body>
 </html>
